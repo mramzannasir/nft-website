@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cocoshop Space Theme</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <script src="assets/js/index.js" type="module"></script>
+  </head>
+
+  <body class="text-white bg-[#06071b]">
+    <section class="hero-background relative min-h-screen text-white px-4">
+      <div
+        class="flex flex-col items-center justify-center max-w-[1192px] mx-auto"
+      >
+        <!-- Navigation Bar -->
+        <nav class="w-full" id="home">
+          <div class="max-w-[1192px] mx-auto">
+            <div class="flex justify-between">
+              <div class="flex space-x-4 max-w-[180px]">
+                <!-- logo -->
+                <a
+                  href="#"
+                  class="flex items-center py-5 text-gray-700 hover:text-gray-900"
+                >
+                  <img src="assets/images/logo.svg" />
+
+                  <div class="text-white font-bold text-xl ml-2">CocoShop</div>
+                </a>
+              </div>
+              <!-- primary nav -->
+              <div
+                id="menuToggle"
+                class="fixed flex w-[300px] bg-[#06071b] h-screen md:hidden lg:static top-0 right-0 lg:h-auto lg:w-auto z-[99] flex-col gap-4 lg:gap-7 justify-center lg:bg-transparent lg:flex-row lg:flex items-center space-x-1"
+              >
+                <a
+                  href="#home"
+                  class="text-white lg:text-[#e7eaff] lg:opacity-60 hover:opacity-100 px-5"
+                  >Home</a
+                >
+                <a
+                  href="#mint-section"
+                  class="text-white lg:text-[#e7eaff] lg:opacity-60 hover:opacity-100 px-5"
+                  >Mint</a
+                >
+                <a
+                  href="#roadmap-section"
+                  class="text-white lg:text-[#e7eaff] lg:opacity-60 hover:opacity-100 px-5"
+                  >Roadmap</a
+                >
+                <a
+                  href="#faq-section"
+                  class="text-white lg:text-[#e7eaff] lg:opacity-60 hover:opacity-100 px-5"
+                  >FAQ</a
+                >
+                <!-- icons and button for mobile will hide on larger screens -->
+                <div class="lg:hidden">
+                  <div class="flex gap-2 py-6">
+                    <a
+                      href="https://discord.com"
+                      class="flex justify-center items-center bg-[#E7EAFF14] rounded-full w-[45px] h-[45px] hover:bg-gray-600"
+                      ><svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.7757 4.43853C14.7135 3.92696 13.5743 3.55005 12.3833 3.33416C12.3616 3.32999 12.3399 3.34041 12.3288 3.36122C12.1822 3.63471 12.02 3.99147 11.9063 4.2719C10.6253 4.0706 9.35082 4.0706 8.09607 4.2719C7.9824 3.98525 7.81423 3.63471 7.66706 3.36122C7.6559 3.34109 7.63422 3.33067 7.61254 3.33416C6.42217 3.54933 5.28304 3.92625 4.22009 4.43853C4.21087 4.44269 4.203 4.44963 4.19776 4.45865C2.03708 7.84668 1.44515 11.1514 1.73551 14.4152C1.73682 14.4312 1.74538 14.4464 1.75719 14.4561C3.18275 15.5549 4.56367 16.222 5.91892 16.6642C5.9406 16.6711 5.96358 16.6628 5.97738 16.644C6.29795 16.1845 6.58373 15.7 6.82875 15.1905C6.8432 15.1607 6.8294 15.1253 6.79984 15.1135C6.34655 14.933 5.91495 14.713 5.49974 14.4631C5.4669 14.443 5.46426 14.3937 5.4945 14.3701C5.58187 14.3014 5.66927 14.2299 5.75271 14.1577C5.76781 14.1445 5.78884 14.1417 5.80658 14.15C8.53419 15.4571 11.4872 15.4571 14.1826 14.15C14.2003 14.141 14.2213 14.1438 14.2371 14.157C14.3206 14.2291 14.4079 14.3013 14.4959 14.37C14.5262 14.3937 14.5242 14.443 14.4914 14.4631C14.0762 14.7178 13.6445 14.933 13.1906 15.1128C13.161 15.1246 13.1479 15.1607 13.1624 15.1905C13.4127 15.6993 13.6985 16.1838 14.0131 16.6433C14.0263 16.6628 14.0499 16.6711 14.0716 16.6641C15.4334 16.222 16.8143 15.5549 18.2399 14.4561C18.2524 14.4464 18.2602 14.4318 18.2615 14.4159C18.6091 10.6426 17.6795 7.36491 15.7973 4.4593C15.7928 4.44963 15.7849 4.44269 15.7757 4.43853ZM7.23614 12.4279C6.41495 12.4279 5.73829 11.6366 5.73829 10.6648C5.73829 9.69302 6.40179 8.90174 7.23614 8.90174C8.07699 8.90174 8.74711 9.69999 8.73396 10.6648C8.73396 11.6366 8.07042 12.4279 7.23614 12.4279ZM12.7741 12.4279C11.953 12.4279 11.2763 11.6366 11.2763 10.6648C11.2763 9.69302 11.9398 8.90174 12.7741 8.90174C13.615 8.90174 14.2851 9.69999 14.272 10.6648C14.272 11.6366 13.6151 12.4279 12.7741 12.4279Z"
+                          fill="#E7EAFF"
+                          fill-opacity="0.6"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      href="https://twitter.com"
+                      class="flex justify-center items-center bg-[#E7EAFF14] rounded-full w-[45px] h-[45px] hover:bg-gray-600"
+                      ><svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.427 8.85148L17.0111 2.5H15.6879L10.8392 8.0149L6.9666 2.5H2.5L8.35615 10.8395L2.5 17.5H3.82333L8.94364 11.6761L13.0334 17.5H17.5L11.4267 8.85148H11.427ZM9.61456 10.913L9.02121 10.0825L4.30014 3.47475H6.33269L10.1427 8.80746L10.736 9.63788L15.6885 16.5696H13.656L9.61456 10.9133V10.913Z"
+                          fill="#E7EAFF"
+                          fill-opacity="0.6"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      href="https://opensea.io"
+                      class="flex justify-center items-center bg-[#E7EAFF14] rounded-full w-[45px] h-[45px] hover:bg-gray-600"
+                      ><svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_232_164)">
+                          <path
+                            d="M2.58037 11.5106L2.64228 11.4134L6.37061 5.5804C6.38301 5.56108 6.40039 5.54546 6.42092 5.5352C6.44145 5.52493 6.46438 5.52039 6.48727 5.52207C6.51016 5.52374 6.53218 5.53156 6.551 5.5447C6.56982 5.55784 6.58475 5.57582 6.59421 5.59674C7.21712 6.99278 7.75462 8.72881 7.50293 9.80981C7.39543 10.2544 7.10103 10.8567 6.76965 11.4134C6.72665 11.4945 6.67963 11.5739 6.62975 11.6505C6.61806 11.6678 6.60226 11.682 6.58375 11.6918C6.56524 11.7015 6.54461 11.7065 6.52369 11.7064H2.6893C2.5861 11.7064 2.5259 11.5946 2.58037 11.5106Z"
+                            fill="#E7EAFF"
+                            fill-opacity="0.6"
+                          />
+                          <path
+                            d="M19.1999 12.5945V13.5176C19.1999 13.5709 19.1675 13.6179 19.1205 13.6385C18.8319 13.7624 17.8437 14.2159 17.4329 14.7872C16.3843 16.2463 15.5834 18.3332 13.7926 18.3332H6.32221C3.6746 18.3332 1.52893 16.1804 1.52893 13.5236V13.4385C1.52893 13.3677 1.58626 13.3103 1.65707 13.3103H5.8217C5.90397 13.3103 5.96445 13.3869 5.957 13.468C5.92768 13.7433 5.97939 14.0212 6.10578 14.2675C6.22686 14.5124 6.41403 14.7186 6.64613 14.8628C6.87824 15.007 7.14603 15.0833 7.41926 15.0833H9.48094V13.4737H7.44277C7.41891 13.4734 7.39558 13.4666 7.37529 13.4541C7.355 13.4415 7.33852 13.4237 7.32761 13.4024C7.3167 13.3812 7.31179 13.3574 7.31339 13.3336C7.31499 13.3098 7.32305 13.2869 7.3367 13.2673C7.35906 13.2335 7.384 13.1985 7.41038 13.1584C7.6763 12.7756 7.92406 12.3805 8.15283 11.9745C8.33974 11.6477 8.52091 11.2985 8.66653 10.9482C8.69606 10.8849 8.71956 10.8201 8.74307 10.7567C8.78292 10.6449 8.82419 10.5403 8.85372 10.4357C8.88296 10.3474 8.90675 10.2545 8.93026 10.1676C8.99935 9.87009 9.02887 9.55505 9.02887 9.22825C9.02887 9.10011 9.02314 8.96596 9.0111 8.83782C9.00537 8.69793 8.98759 8.55803 8.96982 8.41814C8.95614 8.29267 8.93701 8.16786 8.91249 8.04405C8.88179 7.85585 8.84258 7.66913 8.79495 7.48449L8.77862 7.41397C8.74307 7.28583 8.71383 7.16371 8.67255 7.03557C8.55858 6.64334 8.42784 6.25618 8.28068 5.87516C8.22908 5.72925 8.17032 5.58936 8.11155 5.44947C8.02469 5.23877 7.93612 5.04757 7.85528 4.8664C7.814 4.78384 7.77874 4.70874 7.74348 4.6322C7.70415 4.54608 7.66334 4.46064 7.62107 4.37592C7.59155 4.31286 7.55772 4.2538 7.53422 4.19475L7.28224 3.7295C7.27434 3.71542 7.27078 3.69932 7.272 3.68323C7.27321 3.66713 7.27915 3.65176 7.28907 3.63902C7.29899 3.62629 7.31244 3.61676 7.32775 3.61164C7.34306 3.60653 7.35953 3.60604 7.37512 3.61025L8.9509 4.03737H8.9552C8.95807 4.03737 8.95979 4.03881 8.96093 4.03881L9.16876 4.09614L9.39694 4.16093L9.48094 4.18443V3.24791C9.48094 2.79584 9.84328 2.4292 10.2908 2.4292C10.5146 2.4292 10.7179 2.52036 10.8638 2.66914C11.0094 2.8182 11.1009 3.02116 11.1009 3.24819V4.63822L11.2686 4.68523C11.2823 4.68953 11.2953 4.69601 11.307 4.70444C11.3483 4.7354 11.4073 4.78098 11.4821 4.83687C11.5412 4.88389 11.6045 4.94151 11.6811 5.00027C11.8327 5.12268 12.0136 5.28005 12.2125 5.46122C12.2656 5.50709 12.3172 5.5541 12.3645 5.60112C12.6499 5.86377 12.9225 6.13995 13.1815 6.42871C13.2583 6.51557 13.3334 6.60386 13.4099 6.69674C13.4865 6.79105 13.5676 6.88364 13.6381 6.97652C13.731 7.10036 13.831 7.2285 13.9179 7.36237C13.9592 7.42572 14.0062 7.49051 14.046 7.55386C14.1578 7.72299 14.2564 7.89843 14.3508 8.07358C14.3906 8.1547 14.4319 8.24299 14.4671 8.32985C14.5718 8.56406 14.654 8.80284 14.7071 9.04106C14.7234 9.09266 14.7352 9.14856 14.7409 9.19873V9.21048C14.7587 9.28128 14.7647 9.35639 14.7704 9.43293C14.7949 9.67849 14.7809 9.92636 14.7291 10.1676C14.7064 10.2719 14.6774 10.3747 14.6423 10.4755C14.607 10.5759 14.5718 10.6802 14.5259 10.7788C14.4372 10.9875 14.3313 11.1884 14.2094 11.3797C14.1696 11.4502 14.1226 11.5253 14.0753 11.5961C14.0237 11.6712 13.9709 11.742 13.9236 11.8111C13.8588 11.8994 13.7898 11.9922 13.7189 12.0748C13.6559 12.1617 13.5908 12.2485 13.5203 12.3251C13.4257 12.4381 13.3285 12.549 13.2288 12.6576C13.1697 12.727 13.1064 12.7978 13.0416 12.8611C12.9785 12.9316 12.9134 12.995 12.8547 13.054C12.7561 13.1527 12.6735 13.2292 12.6044 13.2925L12.4424 13.4413C12.4184 13.4623 12.3875 13.4738 12.3556 13.4737H11.1006V15.0833H12.6792C13.0313 15.0832 13.3718 14.9572 13.6393 14.7282C13.7321 14.6473 14.1369 14.2967 14.6156 13.7681C14.6317 13.7502 14.6526 13.7375 14.6758 13.7314L19.0362 12.4707C19.0554 12.4653 19.0755 12.4645 19.095 12.4682C19.1145 12.4719 19.1329 12.4801 19.1487 12.4921C19.1645 12.504 19.1773 12.5195 19.1862 12.5373C19.195 12.5551 19.1999 12.5747 19.1999 12.5945Z"
+                            fill="#E7EAFF"
+                            fill-opacity="0.6"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_232_164">
+                            <rect width="20" height="20" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </a>
+                  </div>
+                  <!-- Mobile connect wallet button -->
+                  <button
+                    class="flex items-center bg-gradient-to-r from-[#22a6ec] to-[#20e3b7] text-white py-3 px-5 rounded-full transition duration-300 ease-in-out transform hover:scale-105"
+                  >
+                    <img src="assets/images/wallet-icon.svg" />
+                    <span class="ml-2">Connect Wallet</span>
+                  </button>
+                </div>
+                <button
+                  id="menuCloseButton"
+                  class="md:hidden !absolute top-3 right-3"
+                >
+                  <img
+                    src="assets/images/close-btn.svg"
+                    class="w-[20px] h-[20px]"
+                  />
+                </button>
+              </div>
+
+              <!-- secondary nav -->
+              <div class="hidden md:flex items-center space-x-1 gap-2 relative">
+                <a
+                  href="https://discord.com"
+                  class="flex justify-center items-center bg-[#E7EAFF14] rounded-full w-[45px] h-[45px] hover:bg-gray-600"
+                  target="_blank"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.7757 4.43853C14.7135 3.92696 13.5743 3.55005 12.3833 3.33416C12.3616 3.32999 12.3399 3.34041 12.3288 3.36122C12.1822 3.63471 12.02 3.99147 11.9063 4.2719C10.6253 4.0706 9.35082 4.0706 8.09607 4.2719C7.9824 3.98525 7.81423 3.63471 7.66706 3.36122C7.6559 3.34109 7.63422 3.33067 7.61254 3.33416C6.42217 3.54933 5.28304 3.92625 4.22009 4.43853C4.21087 4.44269 4.203 4.44963 4.19776 4.45865C2.03708 7.84668 1.44515 11.1514 1.73551 14.4152C1.73682 14.4312 1.74538 14.4464 1.75719 14.4561C3.18275 15.5549 4.56367 16.222 5.91892 16.6642C5.9406 16.6711 5.96358 16.6628 5.97738 16.644C6.29795 16.1845 6.58373 15.7 6.82875 15.1905C6.8432 15.1607 6.8294 15.1253 6.79984 15.1135C6.34655 14.933 5.91495 14.713 5.49974 14.4631C5.4669 14.443 5.46426 14.3937 5.4945 14.3701C5.58187 14.3014 5.66927 14.2299 5.75271 14.1577C5.76781 14.1445 5.78884 14.1417 5.80658 14.15C8.53419 15.4571 11.4872 15.4571 14.1826 14.15C14.2003 14.141 14.2213 14.1438 14.2371 14.157C14.3206 14.2291 14.4079 14.3013 14.4959 14.37C14.5262 14.3937 14.5242 14.443 14.4914 14.4631C14.0762 14.7178 13.6445 14.933 13.1906 15.1128C13.161 15.1246 13.1479 15.1607 13.1624 15.1905C13.4127 15.6993 13.6985 16.1838 14.0131 16.6433C14.0263 16.6628 14.0499 16.6711 14.0716 16.6641C15.4334 16.222 16.8143 15.5549 18.2399 14.4561C18.2524 14.4464 18.2602 14.4318 18.2615 14.4159C18.6091 10.6426 17.6795 7.36491 15.7973 4.4593C15.7928 4.44963 15.7849 4.44269 15.7757 4.43853ZM7.23614 12.4279C6.41495 12.4279 5.73829 11.6366 5.73829 10.6648C5.73829 9.69302 6.40179 8.90174 7.23614 8.90174C8.07699 8.90174 8.74711 9.69999 8.73396 10.6648C8.73396 11.6366 8.07042 12.4279 7.23614 12.4279ZM12.7741 12.4279C11.953 12.4279 11.2763 11.6366 11.2763 10.6648C11.2763 9.69302 11.9398 8.90174 12.7741 8.90174C13.615 8.90174 14.2851 9.69999 14.272 10.6648C14.272 11.6366 13.6151 12.4279 12.7741 12.4279Z"
+                      fill="#E7EAFF"
+                      fill-opacity="0.6"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://twitter.com"
+                  class="flex justify-center items-center bg-[#E7EAFF14] rounded-full w-[45px] h-[45px] hover:bg-gray-600"
+                  target="_blank"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.427 8.85148L17.0111 2.5H15.6879L10.8392 8.0149L6.9666 2.5H2.5L8.35615 10.8395L2.5 17.5H3.82333L8.94364 11.6761L13.0334 17.5H17.5L11.4267 8.85148H11.427ZM9.61456 10.913L9.02121 10.0825L4.30014 3.47475H6.33269L10.1427 8.80746L10.736 9.63788L15.6885 16.5696H13.656L9.61456 10.9133V10.913Z"
+                      fill="#E7EAFF"
+                      fill-opacity="0.6"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://opensea.io"
+                  class="flex justify-center items-center bg-[#E7EAFF14] rounded-full w-[45px] h-[45px] hover:bg-gray-600"
+                  target="_blank"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_232_164)">
+                      <path
+                        d="M2.58037 11.5106L2.64228 11.4134L6.37061 5.5804C6.38301 5.56108 6.40039 5.54546 6.42092 5.5352C6.44145 5.52493 6.46438 5.52039 6.48727 5.52207C6.51016 5.52374 6.53218 5.53156 6.551 5.5447C6.56982 5.55784 6.58475 5.57582 6.59421 5.59674C7.21712 6.99278 7.75462 8.72881 7.50293 9.80981C7.39543 10.2544 7.10103 10.8567 6.76965 11.4134C6.72665 11.4945 6.67963 11.5739 6.62975 11.6505C6.61806 11.6678 6.60226 11.682 6.58375 11.6918C6.56524 11.7015 6.54461 11.7065 6.52369 11.7064H2.6893C2.5861 11.7064 2.5259 11.5946 2.58037 11.5106Z"
+                        fill="#E7EAFF"
+                        fill-opacity="0.6"
+                      />
+                      <path
+                        d="M19.1999 12.5945V13.5176C19.1999 13.5709 19.1675 13.6179 19.1205 13.6385C18.8319 13.7624 17.8437 14.2159 17.4329 14.7872C16.3843 16.2463 15.5834 18.3332 13.7926 18.3332H6.32221C3.6746 18.3332 1.52893 16.1804 1.52893 13.5236V13.4385C1.52893 13.3677 1.58626 13.3103 1.65707 13.3103H5.8217C5.90397 13.3103 5.96445 13.3869 5.957 13.468C5.92768 13.7433 5.97939 14.0212 6.10578 14.2675C6.22686 14.5124 6.41403 14.7186 6.64613 14.8628C6.87824 15.007 7.14603 15.0833 7.41926 15.0833H9.48094V13.4737H7.44277C7.41891 13.4734 7.39558 13.4666 7.37529 13.4541C7.355 13.4415 7.33852 13.4237 7.32761 13.4024C7.3167 13.3812 7.31179 13.3574 7.31339 13.3336C7.31499 13.3098 7.32305 13.2869 7.3367 13.2673C7.35906 13.2335 7.384 13.1985 7.41038 13.1584C7.6763 12.7756 7.92406 12.3805 8.15283 11.9745C8.33974 11.6477 8.52091 11.2985 8.66653 10.9482C8.69606 10.8849 8.71956 10.8201 8.74307 10.7567C8.78292 10.6449 8.82419 10.5403 8.85372 10.4357C8.88296 10.3474 8.90675 10.2545 8.93026 10.1676C8.99935 9.87009 9.02887 9.55505 9.02887 9.22825C9.02887 9.10011 9.02314 8.96596 9.0111 8.83782C9.00537 8.69793 8.98759 8.55803 8.96982 8.41814C8.95614 8.29267 8.93701 8.16786 8.91249 8.04405C8.88179 7.85585 8.84258 7.66913 8.79495 7.48449L8.77862 7.41397C8.74307 7.28583 8.71383 7.16371 8.67255 7.03557C8.55858 6.64334 8.42784 6.25618 8.28068 5.87516C8.22908 5.72925 8.17032 5.58936 8.11155 5.44947C8.02469 5.23877 7.93612 5.04757 7.85528 4.8664C7.814 4.78384 7.77874 4.70874 7.74348 4.6322C7.70415 4.54608 7.66334 4.46064 7.62107 4.37592C7.59155 4.31286 7.55772 4.2538 7.53422 4.19475L7.28224 3.7295C7.27434 3.71542 7.27078 3.69932 7.272 3.68323C7.27321 3.66713 7.27915 3.65176 7.28907 3.63902C7.29899 3.62629 7.31244 3.61676 7.32775 3.61164C7.34306 3.60653 7.35953 3.60604 7.37512 3.61025L8.9509 4.03737H8.9552C8.95807 4.03737 8.95979 4.03881 8.96093 4.03881L9.16876 4.09614L9.39694 4.16093L9.48094 4.18443V3.24791C9.48094 2.79584 9.84328 2.4292 10.2908 2.4292C10.5146 2.4292 10.7179 2.52036 10.8638 2.66914C11.0094 2.8182 11.1009 3.02116 11.1009 3.24819V4.63822L11.2686 4.68523C11.2823 4.68953 11.2953 4.69601 11.307 4.70444C11.3483 4.7354 11.4073 4.78098 11.4821 4.83687C11.5412 4.88389 11.6045 4.94151 11.6811 5.00027C11.8327 5.12268 12.0136 5.28005 12.2125 5.46122C12.2656 5.50709 12.3172 5.5541 12.3645 5.60112C12.6499 5.86377 12.9225 6.13995 13.1815 6.42871C13.2583 6.51557 13.3334 6.60386 13.4099 6.69674C13.4865 6.79105 13.5676 6.88364 13.6381 6.97652C13.731 7.10036 13.831 7.2285 13.9179 7.36237C13.9592 7.42572 14.0062 7.49051 14.046 7.55386C14.1578 7.72299 14.2564 7.89843 14.3508 8.07358C14.3906 8.1547 14.4319 8.24299 14.4671 8.32985C14.5718 8.56406 14.654 8.80284 14.7071 9.04106C14.7234 9.09266 14.7352 9.14856 14.7409 9.19873V9.21048C14.7587 9.28128 14.7647 9.35639 14.7704 9.43293C14.7949 9.67849 14.7809 9.92636 14.7291 10.1676C14.7064 10.2719 14.6774 10.3747 14.6423 10.4755C14.607 10.5759 14.5718 10.6802 14.5259 10.7788C14.4372 10.9875 14.3313 11.1884 14.2094 11.3797C14.1696 11.4502 14.1226 11.5253 14.0753 11.5961C14.0237 11.6712 13.9709 11.742 13.9236 11.8111C13.8588 11.8994 13.7898 11.9922 13.7189 12.0748C13.6559 12.1617 13.5908 12.2485 13.5203 12.3251C13.4257 12.4381 13.3285 12.549 13.2288 12.6576C13.1697 12.727 13.1064 12.7978 13.0416 12.8611C12.9785 12.9316 12.9134 12.995 12.8547 13.054C12.7561 13.1527 12.6735 13.2292 12.6044 13.2925L12.4424 13.4413C12.4184 13.4623 12.3875 13.4738 12.3556 13.4737H11.1006V15.0833H12.6792C13.0313 15.0832 13.3718 14.9572 13.6393 14.7282C13.7321 14.6473 14.1369 14.2967 14.6156 13.7681C14.6317 13.7502 14.6526 13.7375 14.6758 13.7314L19.0362 12.4707C19.0554 12.4653 19.0755 12.4645 19.095 12.4682C19.1145 12.4719 19.1329 12.4801 19.1487 12.4921C19.1645 12.504 19.1773 12.5195 19.1862 12.5373C19.195 12.5551 19.1999 12.5747 19.1999 12.5945Z"
+                        fill="#E7EAFF"
+                        fill-opacity="0.6"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_232_164">
+                        <rect width="20" height="20" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <!-- Desktop connect wallet button -->
+                <button
+                  id="connect-wallet-btn"
+                  class="flex items-center bg-gradient-to-r from-[#22a6ec] to-[#20e3b7] text-white py-3 px-5 rounded-full transition duration-300 ease-in-out transform hover:scale-105"
+                >
+                  <img src="assets/images/wallet-icon.svg" />
+                  <span class="ml-2">Connect Wallet</span>
+                </button>
+              </div>
+
+              <!-- mobile button goes here -->
+              <div class="md:hidden flex items-center relative">
+                <button id="menuOpenButton">
+                  <img
+                    src="assets/images/mobile-menu-icon.svg"
+                    class="w-[20px] h-[20px]"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- mobile menu -->
+        </nav>
+
+        <!-- Hero Section -->
+        <div
+          id="hero"
+          class="pt-10 relative lg:pt-20 pb-12 text-white max-w-[1192px] px-[10px] sm:px-0 lg:gap-0 gap-[30px] w-full flex flex-col-reverse lg:flex-row justify-between items-center"
+        >
+          <!-- Left Column for Text Content -->
+          <div
+            class="flex flex-col items-center lg:items-start w-full max-w-[587px]"
+          >
+            <p
+              class="text-transparent bg-clip-text bg-gradient-to-r text-[14px] sm:text-[16px] lg:text-start text-center from-blue-500 to-teal-400 pb-3 tracking-widest"
+            >
+              RTFKT SKIN VIALS EVO X
+            </p>
+            <h1
+              class="font-bold leading-tight text-[35px] sm:text-[50px] lg:text-start text-center sm:text-[50px] lg:text-[60px] xl:text-[70px] mb-6"
+            >
+              Discover, Collect<br />And Sell NFTs
+            </h1>
+            <p
+              class="text-[17px] sm:text-lg lg:text-md xl:text-xl lg:text-start text-center mb-8 text-gray-400"
+            >
+              A Marketplace For People To Buy And Sell Unique, Single-Edition
+              Digital Artworks From Over 5,000 Artists.
+            </p>
+            <a
+              href="#"
+              class="mb-10 flex items-center justify-center bg-gradient-to-r from-[#22a6ec] to-[#20e3b7] text-white py-3 px-5 rounded-full w-[200px] transition duration-300 ease-in-out transform hover:scale-105"
+            >
+              <span class="mr-2">Discover NFTs</span>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.5577 3.56377C11.865 3.25641 12.3634 3.25641 12.6707 3.56377L18.967 9.86007C19.2744 10.1674 19.2744 10.6657 18.967 10.9731L12.6707 17.2694C12.3634 17.5768 11.865 17.5768 11.5577 17.2694C11.2503 16.962 11.2503 16.4637 11.5577 16.1564L16.5104 11.2036H1.62038C1.18571 11.2036 0.833344 10.8513 0.833344 10.4166C0.833344 9.98192 1.18571 9.62955 1.62038 9.62955H16.5104L11.5577 4.67681C11.2503 4.36945 11.2503 3.87113 11.5577 3.56377Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <div
+              class="flex justify-between items-center border-t border-gray-700 sm:mt-8 pt-6 sm:pt-8 w-[90%]"
+            >
+              <div class="flex flex-col items-center">
+                <p class="text-[25px] sm:text-[40px] font-bold">12K+</p>
+                <p class="text-gray-400">Creators</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <p class="text-[25px] sm:text-[40px] font-bold">45K+</p>
+                <p class="text-gray-400">Artworks</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <p class="text-[25px] sm:text-[40px] font-bold">20M+</p>
+                <p class="text-gray-400">Active Users</p>
+              </div>
+            </div>
+          </div>
+          <!-- Right Column for Image -->
+          <div>
+            <div
+              style="border: 1px solid #e7eaff33"
+              class="w-full max-w-[430px] lg:max-w-[450px] xl:max-w-[545px] rounded-2xl z-[10] backdrop-blur-xl backdrop-brightness-150 p-[20px]"
+            >
+              <img
+                class="mx-auto lg:mr-0 slide-in-bottom"
+                src="assets/images/image1.png"
+                alt="NFT Hero Image"
+              />
+              <div
+                class="flex items-center justify-between px-[7px] sm:px-[22px] pt-7 lg:pt-12 pb-4 lg:pb-9"
+              >
+                <p class="text-[15px] sm:text-[19px] lg:text-[24px]">
+                  Adventurer #3185
+                </p>
+                <p class="text-[21px] sm:text-[25px] lg:text-[32px] font-bold">
+                  0.295 ETH
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Hero gradient section -->
+        <div
+          class="absolute bottom-[-0%] z-[1] w-full h-[190px]"
+          style="background: linear-gradient(#06071b00 0%, #06071b 100%)"
+        ></div>
+      </div>
+    </section>
+
+    <!-- Mint Your NFTs Section -->
+    <section class="text-white py-9 sm:py-16 px-4" id="mint-section">
+      <div
+        class="max-w-[1192px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-16 items-center sm:p-0 p-3"
+      >
+        <!-- Left Side - Image and Countdown -->
+        <img
+          src="assets/images/image2.png"
+          alt="A vibrant NFT artwork featuring an adventurer character in a spacesuit"
+          class="rounded-lg shadow-lg"
+        />
+        <!-- Right Side - NFT Description -->
+        <div id="startmint" class="text-gray-400 max-w-[548px] relative">
+          <div
+            id="modal"
+            class="absolute shd1 bottom-[50px] z-[100] left-0 hidden"
+          >
+            <div
+              class="relative mx-auto shadow-lg bg-[#171822] p-[20px] sm:p-[32px] rounded-[20px] sm:rounded-[32px] max-w-[540px]"
+            >
+              <div class="w-full flex items-center justify-between">
+                <h3
+                  class="text-[17px] sm:text-[24px] font-[700] text-[#22EA96]"
+                >
+                  Successfully Minted
+                </h3>
+                <button
+                  onclick="closeModal()"
+                  class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center"
+                >
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+              <div class="mt-[10px]">
+                <p class="text-sm text-start text-gray-500">
+                  Thank You For Minting NFTs. Join Us On Discord And Let's Bring
+                  The Community Together!
+                </p>
+              </div>
+              <div class="w-full h-[1px] bg-[#E7EAFF]/10 mt-[20px]"></div>
+              <div class="w-full flex items-center mt-[20px] gap-[16px]">
+                <button
+                  class="bg-[#E7EAFF] flex hover:bg-gray-600 items-center gap-[10px] justify-center bg-opacity-[.08] py-[12px] px-[17px] rounded-[32px]"
+                >
+                  <p class="font-[500] text-[16px]">Join our Discord</p>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.7757 4.43853C14.7135 3.92696 13.5743 3.55005 12.3833 3.33416C12.3616 3.32999 12.3399 3.34041 12.3288 3.36122C12.1822 3.63471 12.02 3.99147 11.9063 4.2719C10.6253 4.0706 9.35082 4.0706 8.09607 4.2719C7.9824 3.98525 7.81423 3.63471 7.66706 3.36122C7.6559 3.34109 7.63422 3.33067 7.61254 3.33416C6.42217 3.54933 5.28304 3.92625 4.22009 4.43853C4.21087 4.44269 4.203 4.44963 4.19776 4.45865C2.03708 7.84668 1.44515 11.1514 1.73551 14.4152C1.73682 14.4312 1.74538 14.4464 1.75719 14.4561C3.18275 15.5549 4.56367 16.222 5.91892 16.6642C5.9406 16.6711 5.96358 16.6628 5.97738 16.644C6.29795 16.1845 6.58373 15.7 6.82875 15.1905C6.8432 15.1607 6.8294 15.1253 6.79984 15.1135C6.34655 14.933 5.91495 14.713 5.49974 14.4631C5.4669 14.443 5.46426 14.3937 5.4945 14.3701C5.58187 14.3014 5.66927 14.2299 5.75271 14.1577C5.76781 14.1445 5.78884 14.1417 5.80658 14.15C8.53419 15.4571 11.4872 15.4571 14.1826 14.15C14.2003 14.141 14.2213 14.1438 14.2371 14.157C14.3206 14.2291 14.4079 14.3013 14.4959 14.37C14.5262 14.3937 14.5242 14.443 14.4914 14.4631C14.0762 14.7178 13.6445 14.933 13.1906 15.1128C13.161 15.1246 13.1479 15.1607 13.1624 15.1905C13.4127 15.6993 13.6985 16.1838 14.0131 16.6433C14.0263 16.6628 14.0499 16.6711 14.0716 16.6641C15.4334 16.222 16.8143 15.5549 18.2399 14.4561C18.2524 14.4464 18.2602 14.4318 18.2615 14.4159C18.6091 10.6426 17.6795 7.36491 15.7973 4.4593C15.7928 4.44963 15.7849 4.44269 15.7757 4.43853ZM7.23614 12.4279C6.41495 12.4279 5.73829 11.6366 5.73829 10.6648C5.73829 9.69302 6.40179 8.90174 7.23614 8.90174C8.07699 8.90174 8.74711 9.69999 8.73396 10.6648C8.73396 11.6366 8.07042 12.4279 7.23614 12.4279ZM12.7741 12.4279C11.953 12.4279 11.2763 11.6366 11.2763 10.6648C11.2763 9.69302 11.9398 8.90174 12.7741 8.90174C13.615 8.90174 14.2851 9.69999 14.272 10.6648C14.272 11.6366 13.6151 12.4279 12.7741 12.4279Z"
+                      fill="#E7EAFF"
+                      fill-opacity="0.6"
+                    />
+                  </svg>
+                </button>
+                <a
+                  href="https://twitter.com"
+                  class="flex justify-center items-center bg-[#E7EAFF14] rounded-full w-[45px] h-[45px] hover:bg-gray-600"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.427 8.85148L17.0111 2.5H15.6879L10.8392 8.0149L6.9666 2.5H2.5L8.35615 10.8395L2.5 17.5H3.82333L8.94364 11.6761L13.0334 17.5H17.5L11.4267 8.85148H11.427ZM9.61456 10.913L9.02121 10.0825L4.30014 3.47475H6.33269L10.1427 8.80746L10.736 9.63788L15.6885 16.5696H13.656L9.61456 10.9133V10.913Z"
+                      fill="#E7EAFF"
+                      fill-opacity="0.6"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <h3
+            class="text-[30px] text-center sm:text-start sm:text-[48px] font-bold mb-4 text-white"
+          >
+            Mint Your NFTs
+          </h3>
+          <p class="mb-8 sm:text-start text-center">
+            A Collection Of Non-Fungible Tokens (NFTs) Represents A Unique And
+            Digital Assortment Of Blockchain-Based Assets, Each Distinguished By
+            Its Distinct Characteristics And Ownership Verification.
+          </p>
+          <div
+            class="mint-container p-4 rounded-lg flex items-center justify-between text-white"
+          >
+            <div class="flex flex-col gap-3 w-[45%]">
+              <p class="font-semibold text-[15px] sm:text-lg">Mint Price</p>
+              <div class="flex items-center">
+                <img src="assets/images/eth-icon.svg" />
+                <p class="text-xl sm:text-4xl font-bold ml-2">2.45 ETH</p>
+              </div>
+              <p class="text-[14px] sm:text-sm text-gray-400">12,689.99</p>
+            </div>
+            <!-- <div class="flex flex-col gap-3 w-[45%]">
+              <p class="font-semibold text-lg">Mint Ends</p>
+              <p id="timer" class="text-4xl font-bold w-full">00 : 00 : 00</p>
+              <div class="flex justify-between px-4 w-[83%]">
+                <p class="text-center text-sm text-gray-400">H</p>
+                <p class="text-center text-sm text-gray-400">M</p>
+                <p class="text-center text-sm text-gray-400">S</p>
+              </div>
+            </div> -->
+            <div class="flex flex-col gap-3 w-[45%]">
+              <p class="font-semibold text-md sm:text-lg">Mint Ends</p>
+              <div class="flex w-full">
+                <div
+                  class="flex items-stretch border border-gray-700 rounded-full overflow-hidden"
+                >
+                  <button
+                    class="minus-btn w-full h-[40px] sm:h-[52px] p-2 bg-gray-700 text-white rounded-l-full hover:bg-gray-600 focus:outline-none"
+                    onclick="changeMintCount(-1)"
+                  >
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <input
+                    type="text"
+                    id="mintCount"
+                    value="5"
+                    class="w-full h-[40px] sm:h-[52px] text-center bg-gray-800 text-white focus:outline-none"
+                    readonly
+                  />
+                  <button
+                    class="plus-btn w-full h-[40px] sm:h-[52px] p-2 bg-gray-700 text-white rounded-r-full hover:bg-gray-600 focus:outline-none"
+                    onclick="changeMintCount(1)"
+                  >
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mx-auto flex justify-center sm:justify-start pt-5">
+            <button
+              onclick="openModal()"
+              class="mint-button flex items-center justify-center text-white py-3 px-5 rounded-full w-[300px] transition duration-300 ease-in-out transform hover:scale-105"
+            >
+              Mint NFT
+            </button>
+          </div>
+        </div>
+        <!-- End Mint  -->
+        <div id="endmint" class="text-gray-400 max-w-[548px] relative hidden">
+          <h3
+            class="text-[30px] text-center sm:text-start sm:text-[48px] font-bold mb-4 text-white"
+          >
+            Mint ended
+          </h3>
+          <p class="mb-8 max-w-[350px] sm:text-start text-center">
+            All NFTs minted🎉 Please look on Discord or X to catch up on
+            information!
+          </p>
+          <div
+            class="w-full flex items-center justify-center sm:justify-start mt-[20px] gap-[16px]"
+          >
+            <button
+              class="bg-[#E7EAFF] flex hover:bg-[#727CF7] items-center gap-[10px] justify-center bg-opacity-[.08] py-[12px] px-[17px] rounded-[32px]"
+            >
+              <p class="font-[500] text-[16px]">Join our Discord</p>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.7757 4.43853C14.7135 3.92696 13.5743 3.55005 12.3833 3.33416C12.3616 3.32999 12.3399 3.34041 12.3288 3.36122C12.1822 3.63471 12.02 3.99147 11.9063 4.2719C10.6253 4.0706 9.35082 4.0706 8.09607 4.2719C7.9824 3.98525 7.81423 3.63471 7.66706 3.36122C7.6559 3.34109 7.63422 3.33067 7.61254 3.33416C6.42217 3.54933 5.28304 3.92625 4.22009 4.43853C4.21087 4.44269 4.203 4.44963 4.19776 4.45865C2.03708 7.84668 1.44515 11.1514 1.73551 14.4152C1.73682 14.4312 1.74538 14.4464 1.75719 14.4561C3.18275 15.5549 4.56367 16.222 5.91892 16.6642C5.9406 16.6711 5.96358 16.6628 5.97738 16.644C6.29795 16.1845 6.58373 15.7 6.82875 15.1905C6.8432 15.1607 6.8294 15.1253 6.79984 15.1135C6.34655 14.933 5.91495 14.713 5.49974 14.4631C5.4669 14.443 5.46426 14.3937 5.4945 14.3701C5.58187 14.3014 5.66927 14.2299 5.75271 14.1577C5.76781 14.1445 5.78884 14.1417 5.80658 14.15C8.53419 15.4571 11.4872 15.4571 14.1826 14.15C14.2003 14.141 14.2213 14.1438 14.2371 14.157C14.3206 14.2291 14.4079 14.3013 14.4959 14.37C14.5262 14.3937 14.5242 14.443 14.4914 14.4631C14.0762 14.7178 13.6445 14.933 13.1906 15.1128C13.161 15.1246 13.1479 15.1607 13.1624 15.1905C13.4127 15.6993 13.6985 16.1838 14.0131 16.6433C14.0263 16.6628 14.0499 16.6711 14.0716 16.6641C15.4334 16.222 16.8143 15.5549 18.2399 14.4561C18.2524 14.4464 18.2602 14.4318 18.2615 14.4159C18.6091 10.6426 17.6795 7.36491 15.7973 4.4593C15.7928 4.44963 15.7849 4.44269 15.7757 4.43853ZM7.23614 12.4279C6.41495 12.4279 5.73829 11.6366 5.73829 10.6648C5.73829 9.69302 6.40179 8.90174 7.23614 8.90174C8.07699 8.90174 8.74711 9.69999 8.73396 10.6648C8.73396 11.6366 8.07042 12.4279 7.23614 12.4279ZM12.7741 12.4279C11.953 12.4279 11.2763 11.6366 11.2763 10.6648C11.2763 9.69302 11.9398 8.90174 12.7741 8.90174C13.615 8.90174 14.2851 9.69999 14.272 10.6648C14.272 11.6366 13.6151 12.4279 12.7741 12.4279Z"
+                  fill="#E7EAFF"
+                  fill-opacity="0.6"
+                />
+              </svg>
+            </button>
+            <a
+              href="https://twitter.com"
+              class="flex justify-center items-center bg-[#E7EAFF14] rounded-full w-[45px] h-[45px] hover:bg-[#727CF7]"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.427 8.85148L17.0111 2.5H15.6879L10.8392 8.0149L6.9666 2.5H2.5L8.35615 10.8395L2.5 17.5H3.82333L8.94364 11.6761L13.0334 17.5H17.5L11.4267 8.85148H11.427ZM9.61456 10.913L9.02121 10.0825L4.30014 3.47475H6.33269L10.1427 8.80746L10.736 9.63788L15.6885 16.5696H13.656L9.61456 10.9133V10.913Z"
+                  fill="#E7EAFF"
+                  fill-opacity="0.6"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Side - Mint Ended -->
+        <!-- <div class="text-gray-400">
+          <h3 class="text-3xl font-bold mb-4 text-white">Mint Ended</h3>
+          <p class="mb-8">
+            All NFTs minted🎉 Please look on Discord or X to catch up on
+            information!
+          </p>
+          <div class="flex gap-3"> 
+            <a
+              href="#"
+              style="
+                background-image: linear-gradient(
+                  93deg,
+                  #5763f6 -3.65%,
+                  #7780f8 52.28%,
+                  #5763f6 106.01%
+                );
+              "
+              class="flex justify-center items-center w-[230px] h-[54px] text-white font-bold py-3 px-8 rounded-full transition duration-300 ease-in-out transform hover:scale-105"
+            >
+              <span class="mr-2">Join our Discord</span>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.7757 4.43853C14.7135 3.92696 13.5743 3.55005 12.3833 3.33416C12.3616 3.32999 12.3399 3.34041 12.3288 3.36122C12.1822 3.63471 12.02 3.99147 11.9063 4.2719C10.6253 4.0706 9.35082 4.0706 8.09606 4.2719C7.98239 3.98525 7.81423 3.63471 7.66706 3.36122C7.65589 3.34109 7.63421 3.33067 7.61253 3.33416C6.42217 3.54933 5.28304 3.92625 4.22008 4.43853C4.21087 4.44269 4.20299 4.44963 4.19775 4.45865C2.03707 7.84668 1.44514 11.1514 1.73551 14.4152C1.73681 14.4312 1.74537 14.4464 1.75719 14.4561C3.18274 15.5549 4.56367 16.222 5.91891 16.6642C5.94059 16.6711 5.96357 16.6628 5.97738 16.644C6.29795 16.1845 6.58372 15.7 6.82874 15.1905C6.8432 15.1607 6.8294 15.1253 6.79984 15.1135C6.34655 14.933 5.91494 14.713 5.49974 14.4631C5.46689 14.443 5.46426 14.3937 5.4945 14.3701C5.58187 14.3014 5.66927 14.2299 5.7527 14.1577C5.76781 14.1445 5.78883 14.1417 5.80658 14.15C8.53418 15.4571 11.4871 15.4571 14.1826 14.15C14.2003 14.141 14.2213 14.1438 14.2371 14.157C14.3205 14.2291 14.4079 14.3013 14.4959 14.37C14.5261 14.3937 14.5242 14.443 14.4914 14.4631C14.0761 14.7178 13.6445 14.933 13.1906 15.1128C13.161 15.1246 13.1479 15.1607 13.1624 15.1905C13.4127 15.6993 13.6984 16.1838 14.0131 16.6433C14.0262 16.6628 14.0499 16.6711 14.0716 16.6641C15.4334 16.222 16.8143 15.5549 18.2399 14.4561C18.2524 14.4464 18.2602 14.4318 18.2615 14.4159C18.6091 10.6426 17.6795 7.36491 15.7973 4.4593C15.7928 4.44963 15.7849 4.44269 15.7757 4.43853ZM7.23613 12.4279C6.41494 12.4279 5.73828 11.6366 5.73828 10.6648C5.73828 9.69302 6.40179 8.90174 7.23613 8.90174C8.07699 8.90174 8.74711 9.69999 8.73395 10.6648C8.73395 11.6366 8.07041 12.4279 7.23613 12.4279ZM12.7741 12.4279C11.953 12.4279 11.2763 11.6366 11.2763 10.6648C11.2763 9.69302 11.9398 8.90174 12.7741 8.90174C13.615 8.90174 14.2851 9.69999 14.272 10.6648C14.272 11.6366 13.615 12.4279 12.7741 12.4279Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://twitter.com"
+              class="flex justify-center items-center bg-[#E7EAFF14] rounded-full w-[54px] h-[54px] hover:bg-gray-600"
+              ><svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.427 8.85148L17.0111 2.5H15.6879L10.8392 8.0149L6.9666 2.5H2.5L8.35615 10.8395L2.5 17.5H3.82333L8.94364 11.6761L13.0334 17.5H17.5L11.4267 8.85148H11.427ZM9.61456 10.913L9.02121 10.0825L4.30014 3.47475H6.33269L10.1427 8.80746L10.736 9.63788L15.6885 16.5696H13.656L9.61456 10.9133V10.913Z"
+                  fill="#E7EAFF"
+                  fill-opacity="0.6"
+                />
+              </svg>
+            </a>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- The Antelope Pose' by Ramadhani Mangula Section -->
+    <section class="text-white py-9 sm:py-16 px-[5px] sm:px-4">
+      <div
+        class="max-w-[1192px] mx-auto px-3 sm:px-0 grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 items-center"
+      >
+        <!-- Content -->
+        <div class="text-gray-400">
+          <h3
+            class="text-[30px] sm:text-[40px] text-center lg:text-start xl:text-[48px] font-bold mb-4 text-white"
+          >
+            The Antelope Pose' by Ramadhani Mangula
+          </h3>
+          <p class="mb-3 capitalize text-center lg:text-start">
+            "This picture is called 'The Antelope Pose and shows a mother
+            antelope resting with her son after various rounds in the forest. In
+            this scene the mother imparts wisdom to her offspring about the
+            dangers posed by other animals. <br /><br />
+            Mindful of their safety, she keeps a watchful eye against predators
+            such as lions, leopards and even people. <br /><br />
+            In fact, we all enjoy eating Antelope because the meat is very
+            sweet. I often draw Antelopes because I believe they are very nice
+            and gentle, but the meaning of this picture is mother and son."
+          </p>
+        </div>
+        <!-- Image -->
+        <div class="mb-8 md:mb-0">
+          <img
+            src="assets/images/image3.png"
+            alt="A colorful NFT artwork titled The Antelope Pose' by Ramadhani Mangula"
+            class="rounded-lg shadow-lg w-full lg:w-auto"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- OrangeHare x Tinga Tinga Arts Section -->
+    <section class="text-white py-9 sm:py-16 px-[5px] sm:px-4">
+      <div
+        class="max-w-[1192px] mx-auto px-3 sm:px-0 flex-col-reverse flex lg:grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+      >
+        <!-- Image -->
+        <img
+          src="assets/images/image4.png"
+          alt="A playful NFT artwork collaboration between OrangeHare and Tinga Tinga Arts"
+          class="rounded-lg shadow-lg mb-8 md:mb-0 w-full lg:w-auto"
+        />
+        <!-- Content -->
+        <div class="text-gray-400 max-w-[700px] lg:max-w-[531px]">
+          <h3
+            class="text-[30px] sm:text-[40px] xl:text-[48px] text-center lg:text-start font-bold mb-4 text-white"
+          >
+            OrangeHare x Tinga Tinga Arts
+          </h3>
+          <p class="capitalize text-center lg:text-start">
+            <span
+              class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400"
+              >From a creative co-op</span
+            >
+            in Tanzania emerges "TingaTinga: Chapter Il" a collection of six new
+            artists breathing fresh life into old traditions. <br /><br />
+            Renowned for their vivid colors, compelling characters, and
+            captivating narratives, the TingaTinga artistic movement takes
+            inspiration from visionary founder Edward Saidi TingaTinga's work in
+            the 1960s. <br /><br />
+            <span
+              class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400"
+              >In this new collection,</span
+            >
+            OrangeHare is proud to carry the torch of this distinctly East
+            African art form into the digital arena.
+            <br /><br />
+            Proceeds of this collection go to help fund the continuous operation
+            of TingaTinga Arts Collective in Tanzania.
+            <br /><br />
+            <span
+              class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400"
+              >With each purchase,</span
+            >
+            you contribute your own voice to this movement's global narrative,
+            and connect yourself to a Tanzanian tradition that remains unbroken
+            six decades after it was founded. See FAQs for Details!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Roadmap -->
+    <section class="my-8 rounded-lg px-[5px] sm:px-4" id="roadmap-section">
+      <h2
+        class="text-[30px] sm:text-[48px] font-bold mb-[30px] sm:mb-[60px] text-center"
+      >
+        Roadmap
+      </h2>
+
+      <div class="max-w-[1192px] mx-auto px-3 sm:px-0">
+        <ol
+          class="border-l md:mt-[200px] border-neutral-300 dark:border-neutral-500 md:flex md:justify-center md:gap-0 md:border-l-0 md:border-t relative"
+        >
+          <!--First item-->
+          <li class="border-[#21C2D3] relative">
+            <div
+              class="hidden md:flex absolute top-[-1px] left-0 w-full grade1 h-[2px]"
+            ></div>
+            <div
+              class="flex md:hidden absolute top-[0px] left-[-1px] w-[2px] grade1 h-[105%]"
+            ></div>
+            <div class="flex-start flex items-center pt-2 md:block md:pt-0">
+              <div
+                class="-ml-[8px] mr-3 h-[16px] w-[16px] rounded-full bg-[#22A6EC] dark:bg-neutral-500 md:-mt-[8px] md:ml-0 md:mr-0"
+              ></div>
+            </div>
+            <div class="ml-4 mt-2 pb-5 md:ml-0">
+              <h4 class="mb-1.5 text-lg font-semibold">Q1, January</h4>
+              <p
+                class="mb-3 text-neutral-500 dark:text-neutral-300 text-[14px] capitalize-words"
+              >
+                Renowned for their vivid colors, compelling characters, and
+                captivating narratives, the TingaTinga artistic
+              </p>
+            </div>
+          </li>
+
+          <!--Second item-->
+          <li class="md:translate-y-[-97%] flex flex-col-reverse md:flex-col">
+            <div
+              class="ml-4 mt-2 pb-5 md:ml-0 flex flex-col-reverse md:flex-col"
+            >
+              <p
+                class="mb-3 text-neutral-500 text-[14px] dark:text-neutral-300 capitalize-words"
+              >
+                Renowned for their vivid colors, compelling characters, and
+                captivating narratives, the TingaTinga artistic
+              </p>
+              <h4 class="mb-1.5 text-lg font-semibold">Q2, April</h4>
+            </div>
+            <div class="flex-start flex items-center pt-2 md:block md:pt-0">
+              <div
+                class="-ml-[8px] mr-3 h-[16px] w-[16px] rounded-full bg-[#22A6EC] dark:bg-neutral-500 md:translate-y-[17%] md:ml-0 md:mr-0"
+              ></div>
+            </div>
+          </li>
+
+          <!--Third item-->
+          <li>
+            <div class="flex-start flex items-center pt-2 md:block md:pt-0">
+              <div
+                class="-ml-[8px] mr-3 h-[16px] w-[16px] rounded-full bg-neutral-300 dark:bg-neutral-500 md:-mt-[8px] md:ml-0 md:mr-0"
+              ></div>
+            </div>
+            <div class="ml-4 mt-2 pb-5 md:ml-0">
+              <h4 class="mb-1.5 text-lg font-semibold">Q3, July</h4>
+              <p
+                class="mb-3 text-neutral-500 text-[14px] dark:text-neutral-300 capitalize-words"
+              >
+                Renowned for their vivid colors, compelling characters, and
+                captivating narratives, the TingaTinga artistic
+              </p>
+            </div>
+          </li>
+
+          <!--Fourth item-->
+          <li class="md:translate-y-[-97%] flex flex-col-reverse md:flex-col">
+            <div
+              class="ml-4 mt-2 pb-5 md:ml-0 flex flex-col-reverse md:flex-col"
+            >
+              <p
+                class="mb-3 text-[14px] text-neutral-500 dark:text-neutral-300 capitalize-words"
+              >
+                Renowned for their vivid colors, compelling characters, and
+                captivating narratives, the TingaTinga artistic
+              </p>
+              <h4 class="mb-1.5 text-lg font-semibold">Q4, December</h4>
+            </div>
+            <div class="flex-start flex items-center pt-2 md:block md:pt-0">
+              <div
+                class="-ml-[8px] mr-3 h-[16px] w-[16px] rounded-full bg-neutral-300 dark:bg-neutral-500 md:translate-y-[17%] md:ml-0 md:mr-0"
+              ></div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Join our community Section -->
+    <section class="py-9 sm:py-16 px-4 px-4 sm:px-4">
+      <div
+        class="max-w-[1192px] mx-auto px-4 sm:px-0 bg-gradient-to-r from-[#22a6ec] to-[#20e3b7] text-white flex items-center justify-center rounded-2xl py-4 sm:py-0 sm:min-h-[450px]"
+      >
+        <div class="text-center max-w-[693px]">
+          <h2
+            class="text-[30px] sm:text-[48px] font-bold mb-[30px] sm:mb-4 text-center"
+          >
+            Join our community
+          </h2>
+          <p class="mb-8 capitalize-words leading-7 font-medium">
+            The picture is called 'The Antelope Pose' and shows a mother
+            antelope resting with her son after various rounds in the forest. It
+            shares the mother imparting wisdom to her offspring about the
+            dangers posed by other animals.
+          </p>
+          <div class="flex justify-center items-center">
+            <a
+              href="#"
+              style="
+                background-image: linear-gradient(
+                  93deg,
+                  #5763f6 -3.65%,
+                  #7780f8 52.28%,
+                  #5763f6 106.01%
+                );
+              "
+              class="flex justify-center items-center w-[230px] h-[54px] text-white font-bold py-3 px-8 rounded-full transition duration-300 ease-in-out transform hover:scale-105"
+            >
+              <span class="mr-2">Join our Discord</span>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.7757 4.43853C14.7135 3.92696 13.5743 3.55005 12.3833 3.33416C12.3616 3.32999 12.3399 3.34041 12.3288 3.36122C12.1822 3.63471 12.02 3.99147 11.9063 4.2719C10.6253 4.0706 9.35082 4.0706 8.09606 4.2719C7.98239 3.98525 7.81423 3.63471 7.66706 3.36122C7.65589 3.34109 7.63421 3.33067 7.61253 3.33416C6.42217 3.54933 5.28304 3.92625 4.22008 4.43853C4.21087 4.44269 4.20299 4.44963 4.19775 4.45865C2.03707 7.84668 1.44514 11.1514 1.73551 14.4152C1.73681 14.4312 1.74537 14.4464 1.75719 14.4561C3.18274 15.5549 4.56367 16.222 5.91891 16.6642C5.94059 16.6711 5.96357 16.6628 5.97738 16.644C6.29795 16.1845 6.58372 15.7 6.82874 15.1905C6.8432 15.1607 6.8294 15.1253 6.79984 15.1135C6.34655 14.933 5.91494 14.713 5.49974 14.4631C5.46689 14.443 5.46426 14.3937 5.4945 14.3701C5.58187 14.3014 5.66927 14.2299 5.7527 14.1577C5.76781 14.1445 5.78883 14.1417 5.80658 14.15C8.53418 15.4571 11.4871 15.4571 14.1826 14.15C14.2003 14.141 14.2213 14.1438 14.2371 14.157C14.3205 14.2291 14.4079 14.3013 14.4959 14.37C14.5261 14.3937 14.5242 14.443 14.4914 14.4631C14.0761 14.7178 13.6445 14.933 13.1906 15.1128C13.161 15.1246 13.1479 15.1607 13.1624 15.1905C13.4127 15.6993 13.6984 16.1838 14.0131 16.6433C14.0262 16.6628 14.0499 16.6711 14.0716 16.6641C15.4334 16.222 16.8143 15.5549 18.2399 14.4561C18.2524 14.4464 18.2602 14.4318 18.2615 14.4159C18.6091 10.6426 17.6795 7.36491 15.7973 4.4593C15.7928 4.44963 15.7849 4.44269 15.7757 4.43853ZM7.23613 12.4279C6.41494 12.4279 5.73828 11.6366 5.73828 10.6648C5.73828 9.69302 6.40179 8.90174 7.23613 8.90174C8.07699 8.90174 8.74711 9.69999 8.73395 10.6648C8.73395 11.6366 8.07041 12.4279 7.23613 12.4279ZM12.7741 12.4279C11.953 12.4279 11.2763 11.6366 11.2763 10.6648C11.2763 9.69302 11.9398 8.90174 12.7741 8.90174C13.615 8.90174 14.2851 9.69999 14.272 10.6648C14.272 11.6366 13.615 12.4279 12.7741 12.4279Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Frequently Asked Questions Section -->
+    <section class="text-white py-9 sm:py-16 px-[5px] sm:px-4" id="faq-section">
+      <div class="max-w-[1192px] mx-auto px-3 sm:px-0">
+        <div class="mx-auto text-center">
+          <h2 class="text-[30px] sm:text-[48px] font-bold mb-6 text-center">
+            Frequently Answer Questions
+          </h2>
+        </div>
+        <div class="max-w-[1192px] mx-auto mt-8 space-y-4 md:mt-16">
+          <!-- FAQ Item 1 -->
+          <div
+            class="transition-all duration-200 bg-gray-800 shadow-lg cursor-pointer hover:bg-gray-700 rounded-xl"
+          >
+            <button
+              type="button"
+              aria-expanded="false"
+              aria-controls="answer1"
+              class="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+              onclick="toggleFAQ('answer1', this)"
+            >
+              <span class="text-lg font-semibold">What is the mint price?</span>
+              <img src="assets/images/arrow-icon.svg" />
+            </button>
+            <div id="answer1" class="hidden px-4 pb-5 sm:px-6 sm:pb-6">
+              <p>The mint price is currently set at 2.45 ETH.</p>
+            </div>
+          </div>
+          <!-- FAQ Item 2 -->
+          <div
+            class="transition-all duration-200 bg-gray-800 shadow-lg cursor-pointer hover:bg-gray-700 rounded-xl"
+          >
+            <button
+              type="button"
+              aria-expanded="false"
+              aria-controls="answer2"
+              class="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+              onclick="toggleFAQ('answer2', this)"
+            >
+              <span class="text-lg font-semibold"
+                >What is a NFT Collection?</span
+              >
+              <img src="assets/images/arrow-icon.svg" />
+            </button>
+            <div id="answer2" class="hidden px-4 pb-5 sm:px-6 sm:pb-6">
+              <p>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable. If you are going to use a passage of Lorem
+                Ipsum, you need to be sure there isn't
+              </p>
+            </div>
+          </div>
+          <!-- FAQ Item 3 -->
+          <div
+            class="transition-all duration-200 bg-gray-800 shadow-lg cursor-pointer hover:bg-gray-700 rounded-xl"
+          >
+            <button
+              type="button"
+              aria-expanded="false"
+              aria-controls="answer3"
+              class="flex justify-between w-full px-4 py-5 sm:p-6"
+              onclick="toggleFAQ('answer3', this)"
+            >
+              <span class="text-lg font-semibold"
+                >What is the collection supply?</span
+              >
+              <img src="assets/images/arrow-icon.svg" />
+            </button>
+            <div id="answer3" class="hidden px-4 pb-5 sm:px-6 sm:pb-6">
+              <p></p>
+            </div>
+          </div>
+          <!-- FAQ Item 4 -->
+          <div
+            class="transition-all duration-200 bg-gray-800 shadow-lg cursor-pointer hover:bg-gray-700 rounded-xl"
+          >
+            <button
+              type="button"
+              aria-expanded="false"
+              aria-controls="answer4"
+              class="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+              onclick="toggleFAQ('answer4', this)"
+            >
+              <span class="text-lg font-semibold"
+                >Where I can trade the NFTs?</span
+              >
+              <img src="assets/images/arrow-icon.svg" />
+            </button>
+            <div id="answer4" class="hidden px-4 pb-5 sm:px-6 sm:pb-6">
+              <p></p>
+            </div>
+          </div>
+          <!-- FAQ Item 5 -->
+          <div
+            class="transition-all duration-200 bg-gray-800 shadow-lg cursor-pointer hover:bg-gray-700 rounded-xl"
+          >
+            <button
+              type="button"
+              aria-expanded="false"
+              aria-controls="answer5"
+              class="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+              onclick="toggleFAQ('answer5', this)"
+            >
+              <span class="text-lg font-semibold">What is X3DYS?</span>
+              <img src="assets/images/arrow-icon.svg" />
+            </button>
+            <div id="answer5" class="hidden px-4 pb-5 sm:px-6 sm:pb-6">
+              <p></p>
+            </div>
+          </div>
+          <!-- FAQ Item 6 -->
+          <div
+            class="transition-all duration-200 bg-gray-800 shadow-lg cursor-pointer hover:bg-gray-700 rounded-xl"
+          >
+            <button
+              type="button"
+              aria-expanded="false"
+              aria-controls="answer6"
+              class="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+              onclick="toggleFAQ('answer6', this)"
+            >
+              <span class="text-lg font-semibold">What are the beneficts?</span>
+              <img src="assets/images/arrow-icon.svg" />
+            </button>
+            <div id="answer6" class="hidden px-4 pb-5 sm:px-6 sm:pb-6">
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-gray-400 py-8 px-[5px] sm:px-4">
+      <div class="max-w-[1192px] mx-auto px-3 sm:px-0">
+        <div
+          class="flex items-center lg:justify-between gap-[30px] lg:gap-0 flex-col lg:flex-row"
+        >
+          <!-- Footer Links -->
+          <div
+            class="flex justify-center lg:justify-start gap-6 flex-wrap lg:flex-nowrap"
+          >
+            <a
+              href="https://discord.com"
+              class="flex justify-center items-center bg-[#E7EAFF14] text-[#6A75FF] rounded-full px-5 py-2 hover:bg-gray-600"
+            >
+              <svg
+                width="18"
+                height="14"
+                viewBox="0 0 18 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.7757 1.43853C13.7134 0.926964 12.5743 0.55005 11.3833 0.334158C11.3616 0.32999 11.3399 0.34041 11.3287 0.361217C11.1822 0.634712 11.02 0.991469 10.9063 1.2719C9.62529 1.0706 8.35081 1.0706 7.09605 1.2719C6.98238 0.985251 6.81422 0.634712 6.66705 0.361217C6.65588 0.341093 6.6342 0.330673 6.61252 0.334158C5.42216 0.549332 4.28303 0.926247 3.22007 1.43853C3.21086 1.44269 3.20298 1.44963 3.19774 1.45865C1.03706 4.84668 0.445133 8.15144 0.735498 11.4152C0.7368 11.4312 0.745362 11.4464 0.757178 11.4561C2.18273 12.5549 3.56366 13.222 4.9189 13.6642C4.94058 13.6711 4.96356 13.6628 4.97736 13.644C5.29794 13.1845 5.58371 12.7 5.82873 12.1905C5.84319 12.1607 5.82938 12.1253 5.79983 12.1135C5.34654 11.933 4.91493 11.713 4.49973 11.4631C4.46688 11.443 4.46425 11.3937 4.49449 11.3701C4.58186 11.3014 4.66926 11.2299 4.75269 11.1577C4.76779 11.1445 4.78882 11.1417 4.80656 11.15C7.53417 12.4571 10.4871 12.4571 13.1826 11.15C13.2003 11.141 13.2213 11.1438 13.2371 11.157C13.3205 11.2291 13.4079 11.3013 13.4959 11.37C13.5261 11.3937 13.5242 11.443 13.4913 11.4631C13.0761 11.7178 12.6445 11.933 12.1906 12.1128C12.161 12.1246 12.1479 12.1607 12.1624 12.1905C12.4127 12.6993 12.6984 13.1838 13.0131 13.6433C13.0262 13.6628 13.0499 13.6711 13.0715 13.6641C14.4334 13.222 15.8143 12.5549 17.2398 11.4561C17.2523 11.4464 17.2602 11.4318 17.2615 11.4159C17.6091 7.64258 16.6795 4.36491 14.7973 1.4593C14.7928 1.44963 14.7849 1.44269 14.7757 1.43853ZM6.23612 9.4279C5.41493 9.4279 4.73827 8.63663 4.73827 7.66482C4.73827 6.69302 5.40178 5.90174 6.23612 5.90174C7.07698 5.90174 7.74709 6.69999 7.73394 7.66482C7.73394 8.63663 7.0704 9.4279 6.23612 9.4279ZM11.7741 9.4279C10.953 9.4279 10.2763 8.63663 10.2763 7.66482C10.2763 6.69302 10.9398 5.90174 11.7741 5.90174C12.615 5.90174 13.2851 6.69999 13.272 7.66482C13.272 8.63663 12.615 9.4279 11.7741 9.4279Z"
+                  fill="#6A75FF"
+                />
+              </svg>
+
+              <span class="ml-2">Discord</span>
+            </a>
+            <a
+              href="https://telegram.org"
+              class="flex justify-center items-center bg-[#E7EAFF14] text-[#25ABED] rounded-full px-5 py-2 hover:bg-gray-600"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.24463 11.3237L7.52483 17.2196L10.4933 14.1491L15.583 18.3334L19.1667 1.66675L0.833344 9.56548L5.24463 11.3237ZM13.9279 6.44858L8.31637 11.7427L7.61743 14.4674L6.32627 11.128L13.9279 6.44858Z"
+                  fill="#25ABED"
+                />
+              </svg>
+
+              <span class="ml-2">Telegram</span>
+            </a>
+            <a
+              href="https://youtube.com"
+              class="flex justify-center items-center bg-[#E7EAFF14] text-[#FF0000] rounded-full px-5 py-2 hover:bg-gray-600"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect x="3" y="5" width="14" height="10" rx="5" fill="white" />
+                <path
+                  d="M18.9789 5.31349C18.7628 4.51023 18.1295 3.87703 17.3264 3.66074C15.8591 3.25928 9.99001 3.25928 9.99001 3.25928C9.99001 3.25928 4.12113 3.25928 2.65388 3.64552C1.86619 3.86158 1.21742 4.51035 1.00136 5.31349C0.615234 6.78062 0.615234 9.82326 0.615234 9.82326C0.615234 9.82326 0.615234 12.8812 1.00136 14.333C1.21765 15.1362 1.85074 15.7694 2.654 15.9857C4.13658 16.3873 9.99023 16.3873 9.99023 16.3873C9.99023 16.3873 15.8591 16.3873 17.3264 16.001C18.1296 15.7848 18.7628 15.1516 18.9791 14.3485C19.3651 12.8812 19.3651 9.83871 19.3651 9.83871C19.3651 9.83871 19.3806 6.78062 18.9789 5.31349ZM8.12141 12.6342V7.01237L13.0019 9.82326L8.12141 12.6342Z"
+                  fill="#FF0000"
+                />
+              </svg>
+
+              <span class="ml-2">Youtube</span>
+            </a>
+            <a
+              href="https://tiktok.com"
+              class="flex justify-center items-center bg-[#E7EAFF14] text-[#FFFFFF] rounded-full px-5 py-2 hover:bg-gray-600"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_86_162)">
+                  <path
+                    d="M18.9914 6.50695C17.9505 6.50695 16.9901 6.16612 16.2188 5.59113C15.3343 4.93198 14.6987 3.9651 14.4743 2.85069C14.4187 2.57534 14.3888 2.29119 14.386 2H11.4125V10.0308L11.4089 14.4297C11.4089 15.6057 10.6341 16.6029 9.56002 16.9536C9.24831 17.0553 8.91167 17.1036 8.56113 17.0846C8.11369 17.0603 7.6944 16.9268 7.32997 16.7113C6.55444 16.2529 6.02864 15.4212 6.01439 14.4698C5.99194 12.9829 7.20814 11.7706 8.71146 11.7706C9.00821 11.7706 9.2932 11.8185 9.56002 11.9054V9.71041V8.92134C9.27859 8.88015 8.99218 8.85867 8.70255 8.85867C7.05709 8.85867 5.51815 9.53471 4.41809 10.7526C3.58663 11.6731 3.08789 12.8473 3.01095 14.0786C2.91013 15.6962 3.50897 17.2339 4.6703 18.3683C4.84094 18.5349 5.02013 18.6895 5.20751 18.8321C6.20319 19.5894 7.42046 20 8.70255 20C8.99218 20 9.27859 19.9789 9.56002 19.9377C10.7577 19.7623 11.8627 19.2204 12.7348 18.3683C13.8064 17.3215 14.3984 15.9318 14.4048 14.4526L14.3895 7.88369C14.9007 8.27347 15.4597 8.596 16.0596 8.84635C16.9926 9.23542 17.9818 9.4326 19 9.43225V7.29814V6.50625C19.0007 6.50695 18.9921 6.50695 18.9914 6.50695Z"
+                    fill="#FF004F"
+                  />
+                  <path
+                    d="M16.9914 4.50695C15.9505 4.50695 14.9901 4.16612 14.2188 3.59113C13.3343 2.93198 12.6987 1.9651 12.4743 0.850688C12.4187 0.575341 12.3888 0.291192 12.386 0H9.41245V8.03083L9.40889 12.4297C9.40889 13.6057 8.63407 14.6029 7.56002 14.9536C7.24831 15.0553 6.91167 15.1036 6.56113 15.0846C6.11369 15.0603 5.6944 14.9268 5.32997 14.7113C4.55444 14.2529 4.02864 13.4212 4.01439 12.4698C3.99194 10.9829 5.20814 9.77058 6.71146 9.77058C7.00821 9.77058 7.2932 9.81847 7.56002 9.90544V7.71041V6.92134C7.27859 6.88015 6.99218 6.85867 6.70255 6.85867C5.05709 6.85867 3.51815 7.53471 2.41809 8.75265C1.58663 9.67305 1.08789 10.8473 1.01095 12.0786C0.910132 13.6962 1.50897 15.2339 2.6703 16.3683C2.84094 16.5349 3.02013 16.6895 3.20751 16.8321C4.20319 17.5894 5.42046 18 6.70255 18C6.99218 18 7.27859 17.9789 7.56002 17.9377C8.75769 17.7623 9.86274 17.2204 10.7348 16.3683C11.8064 15.3215 12.3984 13.9318 12.4048 12.4526L12.3895 5.88369C12.9007 6.27347 13.4597 6.596 14.0596 6.84635C14.9926 7.23542 15.9818 7.4326 17 7.43225V5.29814V4.50625C17.0007 4.50695 16.9921 4.50695 16.9914 4.50695Z"
+                    fill="#00F8F0"
+                  />
+                  <path
+                    d="M17.9914 5.50695C16.9505 5.50695 15.9901 5.16612 15.2188 4.59113C14.3343 3.93198 13.6987 2.9651 13.4743 1.85069C13.4187 1.57534 13.3888 1.29119 13.386 1H10.4125V9.03083L10.4089 13.4297C10.4089 14.6057 9.63407 15.6029 8.56002 15.9536C8.24831 16.0553 7.91167 16.1036 7.56113 16.0846C7.11369 16.0603 6.6944 15.9268 6.32997 15.7113C5.55444 15.2529 5.02864 14.4212 5.01439 13.4698C4.99194 11.9829 6.20814 10.7706 7.71146 10.7706C8.00821 10.7706 8.2932 10.8185 8.56002 10.9054V8.71041V7.92134C8.27859 7.88015 7.99218 7.85867 7.70255 7.85867C6.05709 7.85867 4.51815 8.53471 3.41809 9.75265C2.58663 10.6731 2.08789 11.8473 2.01095 13.0786C1.91013 14.6962 2.50897 16.2339 3.6703 17.3683C3.84094 17.5349 4.02013 17.6895 4.20751 17.8321C5.20319 18.5894 6.42046 19 7.70255 19C7.99218 19 8.27859 18.9789 8.56002 18.9377C9.75769 18.7623 10.8627 18.2204 11.7348 17.3683C12.8064 16.3215 13.3984 14.9318 13.4048 13.4526L13.3895 6.88369C13.9007 7.27347 14.4597 7.596 15.0596 7.84635C15.9926 8.23542 16.9818 8.4326 18 8.43225V6.29814V5.50625C18.0007 5.50695 17.9921 5.50695 17.9914 5.50695Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_86_162">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span class="ml-2">Tiktok</span>
+            </a>
+          </div>
+          <!-- Social Media Icons -->
+          <div class="flex space-x-4">
+            <a
+              href="#"
+              class="text-gray-400 hover:text-white"
+              aria-label="Discord"
+            >
+              <img src="assets/images/custom1-icon.svg" />
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-white"
+              aria-label="Telegram"
+            >
+              <img src="assets/images/custom2-icon.svg" />
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-white"
+              aria-label="YouTube"
+            >
+              <img src="assets/images/custom3-icon.svg" />
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row justify-between items-center mt-8 border-t border-gray-700 pt-4"
+        >
+          <p class="text-sm text-gray-400 mt-4 md:mt-0">
+            ©2024 CocoShop. All Rights Reserved.
+          </p>
+
+          <div
+            className="flex-1 flex sm:justify-end justify-center max-sm:mt-4 gap-10"
+          >
+            <a href="#" class="mr-4 hover:text-white"> Terms of use </a>
+            <a href="#" class="hover:text-white"> Privacy policy </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Model 3 -->
+    <div
+      id="pop3"
+      class="w-full hidden h-full fixed top-0 left-0 bg-[#2B2B2E]/70 flex items-center justify-center z-[9999999] px-[10px] sm:px-0"
+    >
+      <div
+        class="w-full shd1 max-w-[580px] rounded-[24px] p-[20px] sm:p-[32px] bg-[#171822]"
+      >
+        <div class="flex items-center justify-between">
+          <p class="font-[700] text-[20px] sm:text-[24px]">Mint NFT</p>
+          <div>
+            <button
+              onclick="close3rdpop()"
+              class="text-gray-400 scale-[1.2] bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 px-2 ml-auto inline-flex items-center"
+            >
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+        <p class="font-[500] text-[15px] sm:text-[16px] text-[#E7EAFF]/60">
+          Buy 3 NFTs. Check and approve the transactions in your wallet
+        </p>
+        <div class="w-full h-[1px] bg-[#E7EAFF]/10 my-5"></div>
+        <div class="flex flex-col">
+          <p class="text-[15px] sm:text-[16px] text-[#E7EAFF]/40 leading-[1]">
+            Token balance
+          </p>
+          <div class="flex items-center gap-[10px] mt-[10px]">
+            <img
+              src="./assets/images/eth-icon.svg"
+              class="w-full max-w-[30px] sm:max-w-[40px]"
+              alt=""
+            />
+            <p class="text-[25px] sm:text-[30px] font-[800]">3.00 ETH</p>
+          </div>
+        </div>
+        <div
+          class="flex items-center gap-[10px] sm:gap-[20px] justify-end w-full mt-[10px]"
+        >
+          <button
+            onclick="opencancel()"
+            class="rounded-[8px] border-[1px] border-[#E7EAFF]/10 py-[7px] sm:py-[12px] px-[14px] px-[20px] font-[500]"
+          >
+            Decline
+          </button>
+          <button
+            onclick="opensuccess()"
+            class="rounded-[8px] mint-button border-[1px] border-[#E7EAFF]/10 py-[7px] sm:py-[12px] px-[14px] px-[20px] font-[500]"
+          >
+            approval
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div
+      id="pop231"
+      class="w-full fixed top-0 left-0 min-h-[100vh] z-[999] flex items-start pt-[3%] pr-[4%] xl:pr-[10.5%] justify-end bg-gray-600/50 hidden"
+    >
+      <div
+        class="bg-[#171822] w-[95%] sm:w-[500px] sm:max-w-[424px] p-[24px] rounded-[24px]"
+      >
+        <div class="flex item-- justify-between">
+          <p class="text-[22px] font-[700]">Change Network</p>
+          <button
+            onclick="closesuccess()"
+            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 px-2 ml-auto inline-flex items-center"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="w-full h-[1px] bg-[#E7EAFF]/10 my-[15px]"></div>
+        <p class="text-[16px] font-[500] text-[#E7EAFF]/60">
+          Change the chain to be connected. This NFT can be minted on Ethereum
+        </p>
+      </div>
+    </div>
+
+    <!-- The ERRROr -->
+    <div
+      id="pop123"
+      class="w-full fixed top-0 left-0 min-h-[100vh] z-[999] flex items-start pt-[3%] pr-[4%] xl:pr-[10.5%] justify-end bg-gray-600/60 drop-f hidden"
+    >
+      <div
+        class="bg-[#F2273A]/50 w-[95%] sm:w-[500px] sm:max-w-[424px] p-[24px] rounded-[24px]"
+      >
+        <div class="flex item-- justify-between">
+          <p class="text-[18px] sm:text-[22px] font-[700]">
+            Failed to send transaction
+          </p>
+          <button
+            onclick="closeError()"
+            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 px-2 ml-auto inline-flex items-center"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="w-full h-[1px] bg-[#E7EAFF]/10 my-[15px]"></div>
+        <div class="flex flex-col sm:flex-row items-center justify-between">
+          <p class="text-[14px] sm:text-[16px] font-[500] text-[#E7EAFF]/60">
+            Check the balance of the wallet
+          </p>
+          <a class="text-[14px] sm:text-[16px] text-[#3985F9]">Try again</a>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let storedEndDate = localStorage.getItem("endDate");
+
+      let endDate;
+
+      if (!storedEndDate) {
+        localStorage.setItem("endDate", "2024-02-20T12:39:16.126Z");
+      } else {
+        endDate = new Date(storedEndDate);
+      }
+
+      const timerElement = document.getElementById("timer");
+
+      function updateTimer() {
+        const now = new Date().getTime();
+        const distance = endDate.getTime() - now;
+
+        if (distance < 0) {
+          clearInterval(interval);
+          timerElement.innerHTML = "EXPIRED";
+          localStorage.removeItem("endDate");
+          return;
+        }
+
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        timerElement.innerHTML = `${hours
+          .toString()
+          .padStart(2, "0")} : ${minutes
+          .toString()
+          .padStart(2, "0")} : ${seconds.toString().padStart(2, "0")}`;
+      }
+
+      // const interval = setInterval(updateTimer, 1000);
+      const btn = document.querySelector("button.mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+
+      const btn2 = document.querySelector("button.mobile-menu-button2");
+      const menu2 = document.querySelector(".mobile-menu2");
+
+      btn2.addEventListener("click", () => {
+        menu2.classList.toggle("hidden");
+      });
+
+      function capitalizeWords(sentence) {
+        return sentence.replace(/\b\w/g, function (char) {
+          return char.toUpperCase();
+        });
+      }
+
+      // Get all elements with the class name "sentence"
+      var sentenceElements =
+        document.getElementsByClassName("capitalize-words");
+
+      // Loop through each element
+      for (var i = 0; i < sentenceElements.length; i++) {
+        // Get the text content of the element
+        var sentence = sentenceElements[i].textContent;
+
+        // Capitalize the first letter of each word
+        var capitalizedSentence = capitalizeWords(sentence);
+
+        // Set the capitalized sentence as the new text content of the element
+        sentenceElements[i].textContent = capitalizedSentence;
+      }
+    });
+
+    function toggleFAQ(answerId, trigger) {
+      var answer = document.getElementById(answerId);
+      var isExpanded = trigger.getAttribute("aria-expanded") === "true";
+      answer.style.display = isExpanded ? "none" : "block";
+      trigger.setAttribute("aria-expanded", !isExpanded);
+      trigger.children[1].style.transform = isExpanded
+        ? "rotate(0deg)"
+        : "rotate(90deg)";
+    }
+
+    function changeMintCount(change) {
+      var mintCountInput = document.getElementById("mintCount");
+      var currentCount = parseInt(mintCountInput.value);
+      var newCount = currentCount + change;
+
+      if (newCount >= 1) {
+        mintCountInput.value = newCount;
+      }
+    }
+
+    function openModal() {
+      document.getElementById("modal").classList.remove("hidden");
+    }
+
+    function close3rdpop() {
+      document.getElementById("pop3").classList.add("hidden");
+    }
+
+    function opensuccess() {
+      document.getElementById("pop3").classList.add("hidden");
+      document.getElementById("pop231").classList.remove("hidden");
+    }
+
+    function closesuccess() {
+      document.getElementById("pop231").classList.add("hidden");
+    }
+
+    function opencancel() {
+      document.getElementById("pop3").classList.add("hidden");
+      document.getElementById("pop123").classList.remove("hidden");
+    }
+
+    function closeError() {
+      document.getElementById("pop123").classList.add("hidden");
+    }
+
+    function closeModal() {
+      document.getElementById("modal").classList.add("hidden");
+      document.getElementById("startmint").classList.add("hidden");
+      document.getElementById("endmint").classList.remove("hidden");
+    }
+
+    const menuOpen = document.getElementById("menuOpenButton");
+    const menuContainer = document.getElementById("menuToggle");
+    const menuClose = document.getElementById("menuCloseButton");
+    menuOpen.addEventListener("click", function () {
+      menuContainer.style.display = "flex";
+    });
+    menuClose.addEventListener("click", function () {
+      menuContainer.style.display = "none";
+    });
+  </script>
+</html>
